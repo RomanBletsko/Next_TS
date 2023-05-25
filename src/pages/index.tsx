@@ -14,3 +14,4 @@ export default function Home() {
     </main>
   )
 }
+import Link from 'next/link'
