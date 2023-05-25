@@ -1,0 +1,39 @@
+.searchErr{
+   padding: 5px 20px;
+}
+.searchInput{
+width: 250px;
+height: 30px;
+color:black;
+border-radius: 4px;
+margin:10px 20px;
+padding: 5px 20px;
+}
+.wrapper{
+   color:#ffffff;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   position: relative;
+   padding: 20px 0;
+}
+.searchList{
+position:absolute;
+background: #fff;
+color:black;
+min-width: 250px;
+top: 62px;
+right: 20px;
+z-index: 2;
+border-radius: 4px;
+}
+.searchItem{
+   
+   padding: 5px 20px;
+}
+.searchItem:hover{
+   background-color: rgb(233, 152, 174);
+}
+.searchSpan{
+   margin: 0 10px 0 0;
+}

@@ -32,7 +32,7 @@ interface Hair{
 }
 
 
-export interface User{
+export interface UserProps{
    age:number,
    address:Address,
    bank:Bank,

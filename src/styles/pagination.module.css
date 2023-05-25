@@ -1,0 +1,28 @@
+.paginationBox{
+padding: 20px 0 0;
+}
+.paginationList{
+   list-style: none;
+   display: flex;
+   gap:15px;
+   justify-content: center;
+}
+.pageBtn{
+   background:#7c9390;
+   border-radius: 5px;
+   padding: 2px 10px;
+   
+}
+.pageBtn:hover{
+   background:#f39090;
+}
+
+
+.pageBtnActive {
+   background:#f05252;
+   border-radius: 5px;
+   padding: 2px 10px;
+   
+}
+
+
