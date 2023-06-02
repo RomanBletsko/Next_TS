@@ -1,16 +1,19 @@
 type ButtonProps = {
-  value: string | number;
-  active: boolean;
+  value?: string | number;
+  active?: boolean;
+  isDisable?: boolean;
 };
-export const Button: React.FC<ButtonProps> = ({ value, active }) => {
+export const Button: React.FC<ButtonProps> = ({ value, active, isDisable }) => {
   return (
     <>
       <button
-        className={
+        className={`px-3 py-1 rounded-md ${
           active
-            ? 'px-3 py-1 bg-red-500  rounded-md'
-            : 'px-3 py-1 bg-neutral-400 rounded-md hover:bg-red-400'
-        }>
+            ? 'bg-red-500 '
+            : isDisable
+            ? 'bg-gray-500 '
+            : ' bg-neutral-400 hover:bg-red-400'
+        }`}>
         {value}
       </button>
     </>

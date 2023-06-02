@@ -3,12 +3,10 @@ export const buildBtnArray = (numberOfPages: number, curentPage: number) => {
   for (let i = 1; i <= numberOfPages; i++) {
     if (
       i === 1 ||
+      i === 2 ||
       i === numberOfPages ||
-      i === curentPage ||
-      i === curentPage - 1 ||
-      i === curentPage + 1 ||
-      (curentPage === 1 && i === curentPage + 2) ||
-      (curentPage === numberOfPages && i === curentPage - 2)
+      i === numberOfPages - 1 ||
+      i === curentPage
     ) {
       paginationArray.push(i);
     } else {
@@ -20,7 +18,7 @@ export const buildBtnArray = (numberOfPages: number, curentPage: number) => {
       if (el !== array[index - 1]) {
         return el;
       }
-    },
+    }
   );
   return buttonArray;
 };

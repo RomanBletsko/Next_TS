@@ -36,19 +36,16 @@ const User: React.FC<UsersProps> = ({ user }) => {
         <h1 className={'text-5xl'}>
           {user.firstName} {user.lastName}
         </h1>
-        <ul>
+        <div>
           <UserDataItem text="email" value={user.email} />
           <UserDataItem text="phone" value={user.phone} />
           <UserDataItem text="age" value={user.age} />
-
-          <ul>
-            <UserDataItem text="address" value={user.address.address} />
-            <UserDataItem text="city" value={user.address.city} />
-            <UserDataItem text="state" value={user.address.state} />
-          </ul>
-        </ul>
+          <UserDataItem text="address" value={user.address.address} />
+          <UserDataItem text="city" value={user.address.city} />
+          <UserDataItem text="state" value={user.address.state} />
+        </div>
         <Link href={`/`}>
-          <Button value="go back to users" active={false} />
+          <Button value="Go back to users" />
         </Link>
       </div>
     </MainLayout>

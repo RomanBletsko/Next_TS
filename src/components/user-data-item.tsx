@@ -4,8 +4,8 @@ type UserDataItemProp = {
 };
 export const UserDataItem: React.FC<UserDataItemProp> = ({ value, text }) => {
   return (
-    <li className={'text-xl'}>
+    <p className="text-xl">
       {text}: {value}
-    </li>
+    </p>
   );
 };

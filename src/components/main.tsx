@@ -8,10 +8,10 @@ type LayoutProps = {
 export const MainLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <nav className={'flex justify-center w-full'}>
+      <nav className="flex justify-center w-full">
         <Search />
       </nav>
-      <main className={'w-full'}>{children}</main>
+      <main className="w-full">{children}</main>
     </>
   );
 };
