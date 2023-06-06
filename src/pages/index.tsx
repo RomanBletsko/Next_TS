@@ -1,17 +1,15 @@
-import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google';
+import { MainLayout } from '../components/main';
 
+import Users from './users';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-  
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <h1>Home</h1>
-      
-    </main>
-  )
+    <MainLayout>
+      <Users />
+    </MainLayout>
+  );
 }
 import Link from 'next/link'
